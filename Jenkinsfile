@@ -8,7 +8,7 @@ node{
     }  
   }
   stage('Compile and Package'){
-  bat 'mvn package'
+  bat 'mvn clean package'
   }
   stage('Email Notification'){
   emailext body:  '''Jenkins build was successful.. :)
